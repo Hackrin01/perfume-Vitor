@@ -5,19 +5,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfume</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: #0a0a0a;
+            color: white;
+        }
+
+        /* MENU */
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 15px 50px;
+            position: sticky;
+            top: 0;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: gold;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            position: relative;
+            font-weight: 500;
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: gold;
+            left: 0;
+            bottom: -5px;
+            transition: 0.4s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        /* HERO */
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+                url('https://images.unsplash.com/photo-1585386959984-a41552231658');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            letter-spacing: 3px;
+            color: gold;
+        }
+
+        .hero p {
+            margin-top: 15px;
+            font-size: 18px;
+            color: #ddd;
+        }
+
+        .btn {
+            margin-top: 30px;
+            padding: 12px 30px;
+            border: none;
+            background: gold;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            background: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #aaa;
+        }
+    </style>
+
 </head>
 
 <body>
     <div class="conteiner">
+        <!-- HEADER -->
 
         <header>
-            <main>
-
-            </main>
-            <footer>
-                <P>Vitor tomé</P>
-            </footer>
+            <div class="menu">
+                <div class="logo">PERFUME LUX</div>
+                <nav>
+                    <a href="#">Início</a>
+                    <a href="#">Masculinos</a>
+                    <a href="#">Femininos</a>
+                    <a href="#">Coleções</a>
+                    <a href="#">Contato</a>
+                </nav>
+            </div>
         </header>
+
+        <main>
+
+        </main>
+        <footer>
+            <P>Vitor tomé</P>
+        </footer>
+
 
     </div>
 </body>
